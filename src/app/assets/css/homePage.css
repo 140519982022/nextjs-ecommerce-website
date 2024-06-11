@@ -1,0 +1,19 @@
+.flowerWidth{
+    width: 5% !important;
+    /* border-radius: 50px !important; */
+    height: 7% !important;
+}
+
+.bgset{
+    background-color: #ccc;
+}
+
+.para-txt{
+    font-size: x-large;
+}
+
+.img-hit{
+    height: 100% !important;
+    /* border: 2px solid red !important; */
+    /* background-size: cover; */
+}
