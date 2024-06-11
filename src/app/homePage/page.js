@@ -5,7 +5,8 @@ import { CardBody, CardImg, CardText, CardTitle, Col, Container, NavLink, Row } 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { PiFlowerLight } from "react-icons/pi";
-import '../assets/css/HomePage.css'
+import '../assets/css/homePage.css'
+import '../assets/css/homeResponsive.css'
 import Image from 'react-bootstrap/Image';
 // import product1 from '../assets/images/product1.png'
 
@@ -13,7 +14,7 @@ export default function HomePage() {
     return (
         <>
 
-            <video className='w-100 videoHeight position-relative' muted loop autoPlay src='https://cdn.shopify.com/videos/c/o/v/e016d5b604e1492d9720409a548eed41.mp4' />
+            <video className='w-100 videoHeight position-relative ' muted loop autoPlay src='https://cdn.shopify.com/videos/c/o/v/e016d5b604e1492d9720409a548eed41.mp4 ' />
 
             <Container fluid>
                 <Container>
@@ -128,7 +129,7 @@ export default function HomePage() {
                     </Col>
                 </Row>
 
-                <Row>
+                <Row sm={12} md={12}>
                     <Col>
                         <Card>
                             <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area-2_6643b154-36da-408d-9825-39e60d6a2e02_900x.jpg?v=1716820345" />
@@ -190,7 +191,7 @@ export default function HomePage() {
                     </Row>
 
                     <Row>
-                        <Col>
+                        <Col md={12}>
                             <Card>
                                 <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
                                 {/* <Image src={product1}/> */}
@@ -273,8 +274,8 @@ export default function HomePage() {
 
             <Container fluid className='bgset my-3'>
                 <Container className='' >
-                    <Row className='d-flex flex-row-reverse py-5 '>
-                        <Col>
+                    <Row className=' py-5 '>
+                        <Col md={12}>
                             <Card>
                                 <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_e1104082-3e5b-4945-8e96-7f2aec101164_2160x.jpg?v=1713363824" />
                                 {/* <Image src={product1}/> */}
@@ -405,8 +406,23 @@ export default function HomePage() {
 
             <Container fluid className=' my-3'>
                 <Container className='' >
-                    <Row className='d-flex flex-row-reverse py-5 '>
-                        <Col>
+                    <Row className=' py-5 '>
+                        <Col sm={12}  className='d-flex align-items-center'>
+
+                            <Row className='px-4'>
+                                <div className='fs-1 py-3'>
+                                    Inspire Better Living.
+                                </div>
+                                <div className='text-secondary para-txt'>
+                                    Born in Canada, we are grounded on innovation, our community, and respecting the planet we all call home.
+                                </div>
+
+                                <div className='py-3 fw-semibold'>
+                                    <NavLink><u>Who We Are</u></NavLink>
+                                </div>
+                            </Row>
+                        </Col>
+                        <Col >
                             <Row>
 
                                 <Col>
@@ -464,21 +480,7 @@ export default function HomePage() {
                             </Row>
 
                         </Col>
-                        <Col className='d-flex align-items-center'>
 
-                            <Row className='px-4'>
-                                <div className='fs-1 py-3'>
-                                    Inspire Better Living.
-                                </div>
-                                <div className='text-secondary para-txt'>
-                                    Born in Canada, we are grounded on innovation, our community, and respecting the planet we all call home.
-                                </div>
-
-                                <div className='py-3 fw-semibold'>
-                                    <NavLink><u>Who We Are</u></NavLink>
-                                </div>
-                            </Row>
-                        </Col>
                     </Row>
                 </Container>
             </Container>
