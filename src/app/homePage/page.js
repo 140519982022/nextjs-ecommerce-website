@@ -191,7 +191,7 @@ export default function HomePage() {
                     </Row>
 
                     <Row>
-                        <Col md={12}>
+                        <Col md={12} lg={6} xl={6}>
                             <Card>
                                 <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
                                 {/* <Image src={product1}/> */}
@@ -202,7 +202,7 @@ export default function HomePage() {
                                 </CardBody>
                             </Card>
                         </Col>
-                        <Col className=''>
+                        <Col className='' lg={6} xl={6}>
 
                             <Row className='px-4'>
                                 <div className='border border-black rounded-5 border-2 flowerWidth'>
@@ -275,18 +275,8 @@ export default function HomePage() {
             <Container fluid className='bgset my-3'>
                 <Container className='' >
                     <Row className=' py-5 '>
-                        <Col md={12}>
-                            <Card>
-                                <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_e1104082-3e5b-4945-8e96-7f2aec101164_2160x.jpg?v=1713363824" />
-                                {/* <Image src={product1}/> */}
-                                <CardBody>
-                                    <CardText>
-                                        Womens T-Shirts & Tops
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
+                        
+                        <Col lg={6} xl={6}>
                             <Row className='px-4'>
                                 <div className='border border-black rounded-5 border-2 flowerWidth'>
 
@@ -340,6 +330,17 @@ export default function HomePage() {
                                     <NavLink><u>Shop Now</u></NavLink>
                                 </div>
                             </Row>
+                        </Col>
+                        <Col md={12} lg={6} xl={6}>
+                            <Card>
+                                <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_e1104082-3e5b-4945-8e96-7f2aec101164_2160x.jpg?v=1713363824" />
+                                {/* <Image src={product1}/> */}
+                                <CardBody>
+                                    <CardText>
+                                        Womens T-Shirts & Tops
+                                    </CardText>
+                                </CardBody>
+                            </Card>
                         </Col>
                     </Row>
                 </Container>
@@ -407,7 +408,7 @@ export default function HomePage() {
             <Container fluid className=' my-3'>
                 <Container className='' >
                     <Row className=' py-5 '>
-                        <Col sm={12}  className='d-flex align-items-center'>
+                        <Col sm={12} md={12} lg={6} xl={6}  className='d-flex align-items-center'>
 
                             <Row className='px-4'>
                                 <div className='fs-1 py-3'>
@@ -422,7 +423,7 @@ export default function HomePage() {
                                 </div>
                             </Row>
                         </Col>
-                        <Col >
+                        <Col sm={12} md={12} lg={6} xl={6}>
                             <Row>
 
                                 <Col>
