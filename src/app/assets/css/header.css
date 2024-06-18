@@ -8,3 +8,25 @@
     height: 50%;
 }
 
+.megaMenu {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+    left: 0;
+    background-color: white;
+    height: auto;
+}
+
+.nav-item:hover .megaMenu {
+    transform: scaleY(1);
+}
+
+.nav-item:hover {
+    color: red;
+}
+
+.our-link{
+    font-size: 15px !important;
+}
