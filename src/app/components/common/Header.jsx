@@ -16,6 +16,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineLock } from "react-icons/md";
 
 export default function Header() {
+    console.log(imag1);
 
     useEffect(() => {
         const bootstrap = import('bootstrap/dist/js/bootstrap.bundle.min.js')
@@ -26,7 +27,7 @@ export default function Header() {
             <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary shadow-lg position-sticky top-0 z-3">
                 <Container>
                     <NavbarBrand>
-                        <Image src={imag1} />
+                        <Image src={imag1.src} />
                     </NavbarBrand>
 
                     <NavbarToggle aria-controls="responsive-navbar-nav" />
