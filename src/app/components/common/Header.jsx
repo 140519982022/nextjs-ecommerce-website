@@ -13,8 +13,8 @@ import '../../assets/css/header.css'
 import { IoIosSearch } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
-import { MdOutlineLock } from "react-icons/md";
 import Link from 'next/link';
+import { IoCartOutline } from "react-icons/io5";
 
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -125,7 +125,15 @@ export default function Header() {
                             </NavLink>
                             <NavLink><FaRegUserCircle /></NavLink>
                             <NavLink><FaRegHeart /></NavLink>
-                            <NavLink><MdOutlineLock /> ({cartItemCount.length})</NavLink>
+                            <NavLink class="position-relative">
+                            <IoCartOutline className='fs-5'/>
+                                <span class="position-absolute top-5 start-30 translate-middle badge rounded-pill bg-danger crtvalue">
+
+                                    {
+                                        (cartItemCount.length <= 9) ? cartItemCount.length : '9+'
+                                    }
+                                </span>
+                            </NavLink>
                         </Nav>
                     </NavbarCollapse>
                 </Container>

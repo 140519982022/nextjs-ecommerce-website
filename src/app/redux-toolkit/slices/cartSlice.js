@@ -14,7 +14,10 @@ if(getCartValue == null){
 
 const initialState = {
     cart: getCartValu,
+    // cart: [{},{},{},{},{},{},{},{},{},{},],
+
 }
+
 
 export const counterCart = createSlice({
     name: 'cart',
