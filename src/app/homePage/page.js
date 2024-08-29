@@ -10,6 +10,8 @@ import axios from 'axios';
 import { CiHeart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import Link from 'next/link';
+import { useSelector, useDispatch } from 'react-redux'
+import { addToCart } from '../redux-toolkit/slices/cartSlice';
 
 // import product1 from '../assets/images/product1.png'
 
@@ -17,6 +19,8 @@ export default function HomePage() {
 
     const [featuredCategory, setFeaturedCategory] = useState([]);
     const [topProductsList, setTopProductList] = useState([]);
+    const dispatch = useDispatch()
+
 
 
     useEffect(() => {
@@ -132,7 +136,7 @@ export default function HomePage() {
                                             </CardText>
 
                                             <div className="innerDiv ">
-                                                <button type="button" class="btn btn-outline-light">Quick Add</button>
+                                                <button type="button" class="btn btn-outline-light" onClick={() => dispatch(addToCart(product))}>Quick Add</button>
                                             </div>
                                        </div>
 

@@ -16,8 +16,11 @@ import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineLock } from "react-icons/md";
 import Link from 'next/link';
 
+import { useSelector, useDispatch } from 'react-redux'
+
 export default function Header() {
     // console.log(imag1);
+    const cartItemCount = useSelector((state) => state.cart.cart)
 
     useEffect(() => {
         const bootstrap = import('bootstrap/dist/js/bootstrap.bundle.min.js')
@@ -122,7 +125,7 @@ export default function Header() {
                             </NavLink>
                             <NavLink><FaRegUserCircle /></NavLink>
                             <NavLink><FaRegHeart /></NavLink>
-                            <NavLink><MdOutlineLock /></NavLink>
+                            <NavLink><MdOutlineLock /> ({cartItemCount.length})</NavLink>
                         </Nav>
                     </NavbarCollapse>
                 </Container>
