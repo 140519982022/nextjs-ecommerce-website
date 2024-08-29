@@ -14,9 +14,10 @@ import { IoIosSearch } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineLock } from "react-icons/md";
+import Link from 'next/link';
 
 export default function Header() {
-    console.log(imag1);
+    // console.log(imag1);
 
     useEffect(() => {
         const bootstrap = import('bootstrap/dist/js/bootstrap.bundle.min.js')
@@ -27,14 +28,14 @@ export default function Header() {
             <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary shadow-lg position-sticky top-0 z-3">
                 <Container>
                     <NavbarBrand>
-                        <Image src={imag1.src} />
+                        <Link href={'/'}><Image src={imag1.src} /></Link>
                     </NavbarBrand>
 
                     <NavbarToggle aria-controls="responsive-navbar-nav" />
                     <NavbarCollapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <NavItem>
-                                <NavLink>Women</NavLink>
+                                <NavLink href='/women'>Women</NavLink>
                                 <div className='megaMenu'>
                                     <Row className='p-2'>
                                         <Col md={6}>

@@ -8,8 +8,6 @@ import '../assets/css/homeResponsive.css'
 import Image from 'react-bootstrap/Image';
 import axios from 'axios';
 import { CiHeart } from "react-icons/ci";
-import { FaStar } from "react-icons/fa";
-import Link from 'next/link';
 
 // import product1 from '../assets/images/product1.png'
 
@@ -148,7 +146,7 @@ export default function HomePage() {
             </Container>
             
 
-{/* 
+
             <Container fluid className='bgset'>
                 <Container >
                     <Row>
@@ -163,6 +161,7 @@ export default function HomePage() {
                         <Col md={12} lg={6} xl={6}>
                             <Card>
                                 <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
+                                {/* <Image src={product1}/> */}
                                 <CardBody>
                                     <CardText>
                                         Womens T-Shirts & Tops
@@ -193,6 +192,7 @@ export default function HomePage() {
                                     <Col>
                                         <Card>
                                             <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
+                                            {/* <Image src={product1}/> */}
                                             <CardBody>
                                                 <CardText>
                                                     Womens T-Shirts & Tops
@@ -203,6 +203,7 @@ export default function HomePage() {
                                     <Col>
                                         <Card>
                                             <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
+                                            {/* <Image src={product1}/> */}
                                             <CardBody>
                                                 <CardText>
                                                     Womens T-Shirts & Tops
@@ -213,6 +214,7 @@ export default function HomePage() {
                                     <Col>
                                         <Card>
                                             <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
+                                            {/* <Image src={product1}/> */}
                                             <CardBody>
                                                 <CardText>
                                                     Womens T-Shirts & Tops
@@ -235,9 +237,9 @@ export default function HomePage() {
                     </Row>
 
                 </Container>
-            </Container> */}
+            </Container>
 
-            {/* <Container fluid className='bgset my-3'>
+            <Container fluid className='bgset my-3'>
                 <Container className='' >
                     <Row className=' py-5 '>
 
@@ -260,6 +262,7 @@ export default function HomePage() {
                                     <Col>
                                         <Card>
                                             <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
+                                            {/* <Image src={product1}/> */}
                                             <CardBody>
                                                 <CardText>
                                                     Womens T-Shirts & Tops
@@ -270,6 +273,7 @@ export default function HomePage() {
                                     <Col>
                                         <Card>
                                             <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
+                                            {/* <Image src={product1}/> */}
                                             <CardBody>
                                                 <CardText>
                                                     Womens T-Shirts & Tops
@@ -280,6 +284,7 @@ export default function HomePage() {
                                     <Col>
                                         <Card>
                                             <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_c52152f0-d23e-48ce-b572-5d9c4fabb882_2160x.jpg?v=1717534755" />
+                                            {/* <Image src={product1}/> */}
                                             <CardBody>
                                                 <CardText>
                                                     Womens T-Shirts & Tops
@@ -296,6 +301,7 @@ export default function HomePage() {
                         <Col md={12} lg={6} xl={6}>
                             <Card>
                                 <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/imgcol_e1104082-3e5b-4945-8e96-7f2aec101164_2160x.jpg?v=1713363824" />
+                                {/* <Image src={product1}/> */}
                                 <CardBody>
                                     <CardText>
                                         Womens T-Shirts & Tops
@@ -305,80 +311,65 @@ export default function HomePage() {
                         </Col>
                     </Row>
                 </Container>
-            </Container> */}
+            </Container>
 
-            {/* high review */}
-            <Container fluid className='bgset py-5 px-5'>
-                <Row>
-                    <Col md={12} className='pb-5'>
-                        <div className='fs-3 text-center'>
-                            You didn’t hear it from us
-                        </div>
-                    </Col>
-                </Row>
-
-                <Row className='border border-2 border-black'>
-                    <Col className='bg-white p-2'>
-                        <div className='py-5'>
-                    
-                            <CardBody className='d-flex justify-content-between'>
-                            <div>
-                            <FaStar className='text-dark pe-1' /><FaStar className='text-dark pe-1' /><FaStar className='text-dark pe-1' /><FaStar className='text-dark pe-1' /><FaStar className='text-dark pe-1' />
+            <Container fluid className='bgset'>
+                <Container >
+                    <Row>
+                        <Col md={12} className='py-5'>
+                            <div className='fs-3 text-center'>
+                                You didn’t hear it from us
                             </div>
-                                <CardText>
-                                    Based on 32 <br/> Reviews
-                                </CardText>
-                            </CardBody>
-                        </div>
+                        </Col>
+                    </Row>
 
-                        <div>
-                            <p>
-                            This is a simple vest but it looks expensive and falls nicely on the body! Soft and simple.
-                            </p>
-                            
-                            <p>
-                            Emaly. H
-                            </p>
-                            <Link href={'/'} className='text-dark'>Shop now</Link>
-                        </div>
-                    </Col>
-                    <Col>
-                        <Card>
-                            <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/2120364-4LR.01.jpg?crop=center&height=880&v=1715357630&width=672" />
-                            
-                        </Card>
-                    </Col>
-                    <Col className='bg-white p-2'>
-                        <div className='py-5'>
-                    
-                            <CardBody className='d-flex justify-content-between'>
-                            <div>
-                            <FaStar className='text-dark pe-1' /><FaStar className='text-dark pe-1' /><FaStar className='text-dark pe-1' /><FaStar className='text-dark pe-1' /><FaStar className='text-dark pe-1' />
-                            </div>
-                                <CardText>
-                                    Based on 32 <br/> Reviews
-                                </CardText>
-                            </CardBody>
-                        </div>
-
-                        <div>
-                            <p>
-                            This is a simple vest but it looks expensive and falls nicely on the body! Soft and simple.
-                            </p>
-                            
-                            <p>
-                            Emaly. H
-                            </p>
-                            <Link href={'/'} className='text-dark'>Shop now</Link>
-                        </div>
-                    </Col>
-                    <Col>
-                        <Card>
-                            <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/2120364-4LR.01.jpg?crop=center&height=880&v=1715357630&width=672" />
-                            
-                        </Card>
-                    </Col>
-                </Row>
+                    <Row>
+                        <Col>
+                            <Card>
+                                <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/2120364-4LR.01.jpg?crop=center&height=880&v=1715357630&width=672" />
+                                {/* <Image src={product1}/> */}
+                                <CardBody>
+                                    <CardText>
+                                        Womens T-Shirts & Tops
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/2120364-4LR.01.jpg?crop=center&height=880&v=1715357630&width=672" />
+                                {/* <Image src={product1}/> */}
+                                <CardBody>
+                                    <CardText>
+                                        Womens T-Shirts & Tops
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/2120364-4LR.01.jpg?crop=center&height=880&v=1715357630&width=672" />
+                                {/* <Image src={product1}/> */}
+                                <CardBody>
+                                    <CardText>
+                                        Womens T-Shirts & Tops
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <CardImg variant="top" src="https://www.frankandoak.com/cdn/shop/files/2120364-4LR.01.jpg?crop=center&height=880&v=1715357630&width=672" />
+                                {/* <Image src={product1}/> */}
+                                <CardBody>
+                                    <CardText>
+                                        Womens T-Shirts & Tops
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Container>
             </Container>
 
             <Container fluid className=' my-3'>
@@ -404,7 +395,7 @@ export default function HomePage() {
 
                                 <Col>
                                     <Card>
-                                        <Image variant="top" src="https://www.frankandoak.com/cdn/shop/files/story-partners_900x.jpg?v=1712160804" className='position-relative ' fluid />
+                                        <Image variant="top" src="https://www.frankandoak.com/cdn/shop/files/Tile_desktop_2_900x.jpg?v=1712334213" className='position-relative ' fluid />
                                         {/* <Image src={product1}/> */}
                                         {/* <CardBody> */}
                                         <CardText className='position-absolute bottom-0 start-50 py-3 text-white translate-middle-x  translate-middle text-center'>
@@ -431,7 +422,7 @@ export default function HomePage() {
 
                                 <Col>
                                     <Card>
-                                        <Image variant="top" src="https://www.frankandoak.com/cdn/shop/files/story-design_900x.jpg?v=1712160804" className='position-relative ' fluid />
+                                        <Image variant="top" src="https://www.frankandoak.com/cdn/shop/files/Tile_desktop_3_900x.jpg?v=1712334263" className='position-relative ' fluid />
                                         {/* <Image src={product1}/> */}
                                         {/* <CardBody> */}
                                         <CardText className='position-absolute bottom-0 start-50 py-3 text-white translate-middle-x  translate-middle text-center '>

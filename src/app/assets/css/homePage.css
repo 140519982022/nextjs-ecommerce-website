@@ -23,6 +23,31 @@
         height: 100%;
     }
 }
+
 *{
-    background-color: white;
+    /* background-color: white; */
+    color: black;
   }
+
+  
+  .myBox{
+    position: relative;
+}
+
+/* .myBox:hover{
+    box-shadow: 0px 0px 10px 8px #ccc !important;
+} */
+
+.innerDiv{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+    transition: 0.5s;
+}
+.myBox:hover .innerDiv{
+    display: block;
+}
+  
