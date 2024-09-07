@@ -124,16 +124,37 @@ export default function Header() {
                                 <IoIosSearch />
                             </NavLink>
                             <NavLink><FaRegUserCircle /></NavLink>
-                            <NavLink><FaRegHeart /></NavLink>
-                            <NavLink class="position-relative">
-                            <IoCartOutline className='fs-5'/>
+                            <NavLink ><FaRegHeart /></NavLink>
+
+                            {
+                                (cartItemCount.length == 0) ? 
+
+                                <NavLink href='/shopping-cart'>
+                                    <IoCartOutline className='mt-3'/>
+                                </NavLink> 
+                                
+                                : 
+                                
+                                <NavLink href='/shopping-cart' class="position-relative">
+                                    <IoCartOutline className='fs-5'/>
+                                    <span class="position-absolute top-5 start-30 translate-middle badge rounded-pill bg-danger crtvalue">
+
+                                        {
+                                            (cartItemCount.length <= 9) ? cartItemCount.length : '9+'
+                                        }
+                                    </span>
+                                </NavLink>
+                            }
+
+                            {/* <NavLink href='/shopping-cart' class="position-relative">
+                                <IoCartOutline className='fs-5'/>
                                 <span class="position-absolute top-5 start-30 translate-middle badge rounded-pill bg-danger crtvalue">
 
                                     {
                                         (cartItemCount.length <= 9) ? cartItemCount.length : '9+'
                                     }
                                 </span>
-                            </NavLink>
+                            </NavLink> */}
                         </Nav>
                     </NavbarCollapse>
                 </Container>

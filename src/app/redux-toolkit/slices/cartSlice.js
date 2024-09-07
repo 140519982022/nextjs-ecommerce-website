@@ -86,10 +86,15 @@ export const counterCart = createSlice({
         localStorage.setItem('cartItems',JSON.stringify(state.cart));
 
       },
+
+      totalPrice : (state, action) => {
+        let totalPrice =  getCartItems.reduce((total, item) => total + (item.price * item.qty), 0);
+        return totalPrice
+      },
     },
   })
   
   // Action creators are generated for each case reducer function
-  export const { addToCart, removeCart, emptyCart, updateCartAddQty, updateCartMinusQty } = counterCart.actions
+  export const { addToCart, removeCart, emptyCart, updateCartAddQty, updateCartMinusQty, totalPrice } = counterCart.actions
   
   export default counterCart.reducer

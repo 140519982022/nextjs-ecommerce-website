@@ -12,6 +12,8 @@ import { FaStar } from "react-icons/fa";
 import Link from 'next/link';
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart } from '../redux-toolkit/slices/cartSlice';
+import Header from '../components/common/Header';
+import Footer from '../components/common/Footer';
 
 // import product1 from '../assets/images/product1.png'
 
@@ -57,6 +59,7 @@ export default function HomePage() {
 
     return (
         <>
+        <Header/>
 
             <video className='w-100 videoHeight position-relative ' muted loop autoPlay src='https://cdn.shopify.com/videos/c/o/v/e016d5b604e1492d9720409a548eed41.mp4 ' />
 
@@ -465,6 +468,7 @@ export default function HomePage() {
                     </Row>
                 </Container>
             </Container>
+            <Footer/>
         </>
     );
 }
